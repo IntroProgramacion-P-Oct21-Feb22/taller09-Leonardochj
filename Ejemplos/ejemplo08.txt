@@ -1,0 +1,103 @@
+//  Ejemplo de uso de arreglos bidimensional
+//
+//  10    9   8
+//  10    5   5
+1.  Inicio
+2.  (notasEstudiantes(2)(3),i[1-n])
+3.  fila, i[0-n]
+4.  columna, i[0-n]
+5.  valor, i[0-n]
+6.  suma, i[0-n]
+7.  notasEstudiantes <--{{10, 9, 8}, {10, 5, 5}}
+8.  Para(fila<--0, fila<2, 1) haga
+9.    suma <-- 0
+10.   Para(columna<--0, columna<3, 1) haga
+11.     suma <-- suma + notasEstudiantes[fila][columna] 
+12.   Fin_Para
+13.   Escribir suma
+14. Fin_Para 
+15. Fin 
+
+//
+fila = 0
+0<2 = verdadero
+suma = 0
+
+------
+columna = 0
+0<3 = verdadero
+suma = 0 + notasEstudiantes[fila][columna]
+suma = 0 + notasEstudiantes[0][0]
+suma = 0 + 10 >>> 10
+------
+columna = 1
+1<3 = verdadero
+suma = 10 + notasEstudiantes[fila][columna]
+suma = 10 + notasEstudiantes[0][1]
+suma = 10 + 9 >>> 19
+------
+columna = 2
+2<3 = verdadero
+suma = 19 + notasEstudiantes[fila][columna]
+suma = 19 + notasEstudiantes[0][2]
+suma = 19 + 8 >>> 27
+-----
+columna = 3
+3<3 = falso
+
+--------------------
+fila = 1
+1<2 = verdadero 
+suma = 0
+-------
+columna = 0
+0<3 = verdadero
+suma = 0 +  notasEstudiantes[fila][columna]
+suma = 0 +  notasEstudiantes[1][0]
+suma = 0 + 10 >>> 10
+-------
+columna = 1
+1<3 = verdadero
+suma = 10 + notasEstudiantes[fila][columna]
+suma = 10 + notasEstudiantes[1][1]
+suma = 10 + 5 >>> 15
+------
+columna = 2
+2<3 = verdadero
+suma = 15 + notasEstudiantes[fila][columna]
+suma = 15 + notasEstudiantes[1][2]
+suma = 15 + 5 >> 20
+------
+columna = 3
+3<3 = falso
+
+---------------------------------
+fila = 2
+2<2 = falso
+
+
+
+
+
+----------
+// Pantalla
+27
+20
+
+
+
+
+
+
+
+
+
+//
+{
+            0  1  2
+0         {10, 9, 8}
+
+1         {10, 5, 5}
+
+}
+
