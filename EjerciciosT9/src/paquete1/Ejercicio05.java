@@ -32,6 +32,13 @@ public class Ejercicio05 {
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
+            for (int i = 0; i < estudiantes.length; i++) {
+                inicialLetra = estudiantes[i].charAt(0);
+                String inicialUno = String.valueOf(inicialLetra);
+                if (inicial.equals(inicialUno)) {
+                    bandera = false;
+                }
+            }
             
         }
 
